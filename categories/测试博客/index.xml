@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>测试博客 on 养眼的赵旭东</title>
+    <link>https://13802-hub.github.io/categories/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 测试博客 on 养眼的赵旭东</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Sep 2020 14:47:16 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/categories/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>https://13802-hub.github.io/2020/first/</link>
+      <pubDate>Sat, 26 Sep 2020 14:47:16 +0800</pubDate>
+      
+      <guid>https://13802-hub.github.io/2020/first/</guid>
+      <description>我的第一篇博客  经过我的不不懈努力终于成功上传第一篇博客 ,可喜可贺 加油.  </description>
+    </item>
+    
+  </channel>
+</rss>
