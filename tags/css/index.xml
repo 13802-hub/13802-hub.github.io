@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 养眼的赵旭东</title>
-    <link>https://13802-hub.github.io/posts/</link>
-    <description>Recent content in Posts on 养眼的赵旭东</description>
+    <title>css on 养眼的赵旭东</title>
+    <link>https://13802-hub.github.io/tags/css/</link>
+    <description>Recent content in css on 养眼的赵旭东</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2020 16:02:13 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Sep 2020 16:02:13 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>css外链引入方式</title>
       <link>https://13802-hub.github.io/2020/css%E5%A4%96%E9%93%BE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</link>
@@ -21,15 +21,6 @@
  当一个页面被加载时侯,link引用的css会被同时加载,而@import引用的css会等到页面全部被下载完再被加载。所以有时候浏览@import加载css的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。    使用DOM控制样式时差别
  当使用JavaScript控制DOM去改变样式的时候，只能使用link标签，因为@import不是DOM可以控制的。    @import可以在css中再次引入其他样式表
  比如创建一个主样式表,在主样式表中引入其他样式表如:  @import &amp;#39;sub1.css&amp;#39;; @import &amp;#39;sub2.css&amp;#39;;   </description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://13802-hub.github.io/2020/first/</link>
-      <pubDate>Sat, 26 Sep 2020 14:47:16 +0800</pubDate>
-      
-      <guid>https://13802-hub.github.io/2020/first/</guid>
-      <description>我的第一篇博客  经过我的不懈努力终于成功上传第一篇博客 ,可喜可贺 加油.  </description>
     </item>
     
   </channel>
