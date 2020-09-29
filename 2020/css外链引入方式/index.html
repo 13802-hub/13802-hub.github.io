@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "css外链引入方式",
     "headline" : "css外链引入方式",
-    "description" : "css外链引入方式 @import 与link的区别及如何选择  @import方式  \u0026lt;style type=\u0026#34;text\/css\u0026#34; media=\u0026#34;screen\u0026#34;\u0026gt; @import url(\u0026#34;http:\/\/www.taobao.com\/home\/css\/global\/v2.0.css?t=20070518.css\u0026#34;); \u0026lt;\/style\u0026gt;  link方式  \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; rev=\u0026#34;stylesheet\u0026#34; href=\u0026#34;default.css\u0026#34; type=\u0026#34;text\/css\u0026#34; media=\u0026#34;all\u0026#34; \/\u0026gt; link与import的作用相同\n唯一不同的就是服务对象不同\n @import为css服务 link是为当前页面服务  @import与link的区别\n  根源不同\n link属于HTML标签,而@import完全是css提供的一种方式 link标签去了可以加载css外,还可以做很多其它的事情，比如定义RSS，定义rel连接属性等，@import就只能加载css    加载顺序不同\n 当一个页面被加载时侯,link引用的css会被同时加载,而@import引用的css会等到页面全部被下载完再被加载。所以有时候浏览@import加载css的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。    使用DOM控制样式时差别\n 当使用JavaScript控制DOM去改变样式的时候，只能使用link标签，因为@import不是DOM可以控制的。    @import可以在css中再次引入其他样式表\n 比如创建一个主样式表,在主样式表中引入其他样式表如:  @import \u0026#39;sub1.css\u0026#39;; @import \u0026#39;sub2.css\u0026#39;;   ",
+    "description" : "css外链引入方式 @import 与link的区别  @import方式  \u0026lt;style type=\u0026#34;text\/css\u0026#34; media=\u0026#34;screen\u0026#34;\u0026gt; @import url(\u0026#34;http:\/\/www.taobao.com\/home\/css\/global\/v2.0.css?t=20070518.css\u0026#34;); \u0026lt;\/style\u0026gt;  link方式  \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; rev=\u0026#34;stylesheet\u0026#34; href=\u0026#34;default.css\u0026#34; type=\u0026#34;text\/css\u0026#34; media=\u0026#34;all\u0026#34; \/\u0026gt; link与import的作用相同\n唯一不同的就是服务对象不同\n @import为css服务 link是为当前页面服务  @import与link的区别\n  根源不同\n link属于HTML标签,而@import完全是css提供的一种方式 link标签去了可以加载css外,还可以做很多其它的事情，比如定义RSS，定义rel连接属性等，@import就只能加载css    加载顺序不同\n 当一个页面被加载时侯,link引用的css会被同时加载,而@import引用的css会等到页面全部被下载完再被加载。所以有时候浏览@import加载css的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。    使用DOM控制样式时差别\n 当使用JavaScript控制DOM去改变样式的时候，只能使用link标签，因为@import不是DOM可以控制的。    @import可以在css中再次引入其他样式表\n 比如创建一个主样式表,在主样式表中引入其他样式表如:  @import \u0026#39;sub1.css\u0026#39;; @import \u0026#39;sub2.css\u0026#39;;   ",
     "inLanguage" : "en-us",
     "author" : "赵旭东",
     "creator" : "赵旭东",
@@ -149,7 +149,7 @@
           
 
           <h1 id="css外链引入方式">css外链引入方式</h1>
-<h2 id="import-与link的区别及如何选择">@import 与link的区别及如何选择</h2>
+<h2 id="import-与link的区别">@import 与link的区别</h2>
 <ul>
 <li>@import方式</li>
 </ul>
