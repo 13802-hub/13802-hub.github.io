@@ -9,31 +9,26 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>About</title>
+      <link>https://13802-hub.github.io/about/</link>
+      <pubDate>Tue, 29 Sep 2020 17:03:24 +0800</pubDate>
+      
+      <guid>https://13802-hub.github.io/about/</guid>
+      <description>&lt;h1 id=&#34;小赵的博客&#34;&gt;小赵的博客&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;前端扣脚程序员一枚,啥也不会,努力学习中.&lt;/li&gt;
+&lt;li&gt;哈哈哈&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Posts</title>
       <link>https://13802-hub.github.io/posts/</link>
       <pubDate>Tue, 29 Sep 2020 16:02:13 +0800</pubDate>
       
       <guid>https://13802-hub.github.io/posts/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>About Hugo</title>
-      <link>https://13802-hub.github.io/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://13802-hub.github.io/about/</guid>
-      <description>&lt;p&gt;Hugo is the &lt;strong&gt;world’s fastest framework for building websites&lt;/strong&gt;. It is written in Go.&lt;/p&gt;
-&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;https://github.com/russross/blackfriday&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
