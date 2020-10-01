@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Sep 2020 16:02:13 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/categories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>css外链引入方式</title>
+      <title>Css外链引入方式</title>
       <link>https://13802-hub.github.io/2020/css%E5%A4%96%E9%93%BE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Tue, 29 Sep 2020 16:02:13 +0800</pubDate>
       
       <guid>https://13802-hub.github.io/2020/css%E5%A4%96%E9%93%BE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/</guid>
-      <description>css外链引入方式 @import 与link的区别  @import方式  &amp;lt;style type=&amp;#34;text/css&amp;#34; media=&amp;#34;screen&amp;#34;&amp;gt; @import url(&amp;#34;http://www.taobao.com/home/css/global/v2.0.css?t=20070518.css&amp;#34;); &amp;lt;/style&amp;gt;  link方式  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; rev=&amp;#34;stylesheet&amp;#34; href=&amp;#34;default.css&amp;#34; type=&amp;#34;text/css&amp;#34; media=&amp;#34;all&amp;#34; /&amp;gt; link与import的作用相同
+      <description>Css外链引入方式 @import 与link的区别  @import方式  &amp;lt;style type=&amp;#34;text/css&amp;#34; media=&amp;#34;screen&amp;#34;&amp;gt; @import url(&amp;#34;http://www.taobao.com/home/css/global/v2.0.css?t=20070518.css&amp;#34;); &amp;lt;/style&amp;gt;  link方式  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; rev=&amp;#34;stylesheet&amp;#34; href=&amp;#34;default.css&amp;#34; type=&amp;#34;text/css&amp;#34; media=&amp;#34;all&amp;#34; /&amp;gt; link与import的作用相同
 唯一不同的就是服务对象不同
  @import为css服务 link是为当前页面服务  @import与link的区别
   根源不同

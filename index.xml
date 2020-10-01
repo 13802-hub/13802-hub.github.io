@@ -5,8 +5,17 @@
     <description>Recent content in 养眼的赵旭东 on 养眼的赵旭东</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2020 16:02:13 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 13:05:17 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://13802-hub.github.io/posts/</link>
+      <pubDate>Thu, 01 Oct 2020 13:05:17 +0800</pubDate>
+      
+      <guid>https://13802-hub.github.io/posts/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>About</title>
@@ -22,22 +31,22 @@
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;相关推荐&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;正则相关素材:https://c.runoob.com/front-end/854&lt;/li&gt;
-&lt;li&gt;各类资源库:www.bootcdn.cn&lt;/li&gt;
-&lt;li&gt;Web前端导航站:http://www.alloyteam.com/nav/&lt;/li&gt;
+&lt;li&gt;正则相关素材:&lt;a href=&#34;https://c.runoob.com/front-end/854&#34;&gt;https://c.runoob.com/front-end/854&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;各类资源库:&lt;a href=&#34;www.bootcdn.cn&#34;&gt;www.bootcdn.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Web前端导航站:&lt;a href=&#34;http://www.alloyteam.com/nav/&#34;&gt;http://www.alloyteam.com/nav/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;开发工具,资源&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;开发工具,资源&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在线工具:&lt;a href=&#34;http://tool.oschina.net/&#34;&gt;http://tool.oschina.net&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;渐变色大全:https://webgradients.com/&lt;/p&gt;
+&lt;p&gt;渐变色大全:&lt;a href=&#34;https://webgradients.com/&#34;&gt;https://webgradients.com/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;程序员工具箱:https://tool.lu/&lt;/p&gt;
+&lt;p&gt;程序员工具箱:&lt;a href=&#34;https://tool.lu/&#34;&gt;https://tool.lu/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;JSON在线:&lt;a href=&#34;https://www.sojson.com/&#34;&gt;https://www.sojson.com&lt;/a&gt;&lt;/p&gt;
@@ -49,15 +58,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>https://13802-hub.github.io/posts/</link>
-      <pubDate>Tue, 29 Sep 2020 16:02:13 +0800</pubDate>
-      
-      <guid>https://13802-hub.github.io/posts/</guid>
-      <description></description>
     </item>
     
   </channel>

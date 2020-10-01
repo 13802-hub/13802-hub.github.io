@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="赵旭东">
+  <meta name="description" content="赵旭东">
+  <meta name="keywords" content="赵旭东">
+  
+  <link rel="prev" href="https://13802-hub.github.io/2020/css%E5%A4%96%E9%93%BE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/" />
+  
+  <link rel="canonical" href="https://13802-hub.github.io/2020/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Vue中使用swiper | 养眼的赵旭东
+       
+  </title>
+  <meta name="title" content="Vue中使用swiper | 养眼的赵旭东">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/13802-hub.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "Vue中使用swiper",
+    "headline" : "Vue中使用swiper",
+    "description" : "Vue中使用swiper 完成移动端轮播图的基本使用 1. 说明  在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性； swiper挂网：https:\/\/www.swiper.com.cn\/，本次使用的版本\u0026quot;vue-awesome-swiper\u0026quot;: \u0026quot;^3.1.3\u0026quot;  2. 安装 npm i vue-awesome-swiper@3.1.3 --save\/\/指定安装版本 npm i vue-awesome-swiper --save \/\/ 默认安装最新的 3. 引入   引入方式有两种\n  在main.js文件中全局引入\nimport VueAwesomeSwiper from \u0026#39;vue-awesome-swiper\u0026#39; import \u0026#39;swiper\/dist\/css\/swiper.css\u0026#39; Vue.use(VueAwesomeSwiper)   在组件中引入\nimport { swiper, swiperSlide } from \u0026#34;vue-awesome-swiper\u0026#34;; require(\u0026#34;swiper\/dist\/css\/swiper.css\u0026#34;); export default { name: \u0026#34;swiper\u0026#34;, components:{ swiper, swiperSlide }     4. 轮播图 \u0026lt;template\u0026gt; \u0026lt;div\u0026gt; \u0026lt;section class=\u0026#34;swiper\u0026#34;\u0026gt; \u0026lt;swiper :options=\u0026#34;swiperOption\u0026#34;\u0026gt; \u0026lt;swiper-slide class=\u0026#34;swp-silde\u0026#34; v-for=\u0026#34;(item, index) in swiperList\u0026#34; :key=\u0026#34;item.",
+    "inLanguage" : "en-us",
+    "author" : "赵旭东",
+    "creator" : "赵旭东",
+    "publisher": "赵旭东",
+    "accountablePerson" : "赵旭东",
+    "copyrightHolder" : "赵旭东",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-10-01 13:05:17 \u002b0800 CST",
+    "dateModified" : "2020-10-01 13:05:17 \u002b0800 CST",
+    "url" : "https:\/\/13802-hub.github.io\/2020\/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper\/",
+    "wordCount" : "164",
+    "keywords" : [ "vue", "养眼的赵旭东"]
+}
+</script>
+
+</head>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://13802-hub.github.io/">养眼的赵旭东</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">分类</a>
+                
+                <a class="menu-item" href="/tags/" title="">标签</a>
+                
+                <a class="menu-item" href="/about/" title="">关于</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://13802-hub.github.io/">养眼的赵旭东</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">博客</a>
+                
+                <a class="menu-item" href="/categories/" title="">分类</a>
+                
+                <a class="menu-item" href="/tags/" title="">标签</a>
+                
+                <a class="menu-item" href="/about/" title="">关于</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Vue中使用swiper</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://13802-hub.github.io/" rel="author">赵旭东</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-10-01 itemprop="datePublished">October 1, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://13802-hub.github.io/categories/vue/"> vue </a>
+                        
+                </span>
+        </div>
+		<h5 id="wc" style="font-size: 1rem;text-align: center;">200 Words|Read in about 1 Min|本文总阅读量<span id="busuanzi_value_page_pv"></span>次</h5>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <h1 id="vue中使用swiper-完成移动端轮播图的基本使用">Vue中使用swiper 完成移动端轮播图的基本使用</h1>
+<h2 id="1-说明">1. 说明</h2>
+<ul>
+<li>在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性；</li>
+<li>swiper挂网：<a href="https://www.swiper.com.cn/">https://www.swiper.com.cn/</a>，本次使用的版本<code>&quot;vue-awesome-swiper&quot;: &quot;^3.1.3&quot;</code></li>
+</ul>
+<h2 id="2-安装">2. 安装</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">npm i vue-awesome-swiper@3.1.3 --save//指定安装版本
+npm i vue-awesome-swiper --save // 默认安装最新的
+</code></pre></div><h2 id="3-引入">3. 引入</h2>
+<ul>
+<li>
+<p>引入方式有两种</p>
+<ol>
+<li>
+<p>在main.js文件中全局引入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">VueAwesomeSwiper</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue-awesome-swiper&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;swiper/dist/css/swiper.css&#39;</span>
+<span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">VueAwesomeSwiper</span>)
+</code></pre></div></li>
+<li>
+<p>在组件中引入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">swiper</span>, <span style="color:#a6e22e">swiperSlide</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;vue-awesome-swiper&#34;</span>;
+<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;swiper/dist/css/swiper.css&#34;</span>);
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+   <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;swiper&#34;</span>,
+    <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
+       <span style="color:#a6e22e">swiper</span>,
+        <span style="color:#a6e22e">swiperSlide</span>
+   }
+</code></pre></div></li>
+</ol>
+</li>
+</ul>
+<h2 id="4-轮播图">4. 轮播图</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vue" data-lang="vue">&lt;<span style="color:#f92672">template</span>&gt;
+	&lt;<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;swiper&#34;</span>&gt;
+			&lt;<span style="color:#f92672">swiper</span> <span style="color:#f92672">:options</span><span style="color:#e6db74">=&#34;swiperOption&#34;</span>&gt;
+				&lt;<span style="color:#f92672">swiper-slide</span>  <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;swp-silde&#34;</span> <span style="color:#f92672">v-for</span><span style="color:#e6db74">=&#34;(item, index) in swiperList&#34; :key=&#34;item.id&#34; data-id=&#34;item.id&#34;&gt;
+</span><span style="color:#e6db74">				&lt;img class=&#34;swp-img&#34; :src=&#34;item.imgUrl&#34; alt=&#34;&#34;&gt;&lt;/swiper-slide&gt;
+</span><span style="color:#e6db74">				&lt;div class=&#34;swiper-pagination&#34; slot=&#34;pagination&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+			&lt;/<span style="color:#f92672">swiper</span>&gt;
+		&lt;/<span style="color:#f92672">section</span>&gt;
+	&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;	
+
+&lt;<span style="color:#f92672">script</span>&gt;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;swiper/dist/css/swiper.css&#39;</span>
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">swiper</span>, <span style="color:#a6e22e">swiperSlide</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue-awesome-swiper&#39;</span>
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+   <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Swiper&#34;</span>,
+   <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span> {
+     <span style="color:#a6e22e">swiper</span>,
+     <span style="color:#a6e22e">swiperSlide</span>,
+   },
+   <span style="color:#a6e22e">data</span>(){
+      <span style="color:#66d9ef">return</span> {
+          <span style="color:#a6e22e">swiperOption</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">pagination</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;.swiper-pagination&#39;</span> },
+            <span style="color:#a6e22e">autoplay</span><span style="color:#f92672">:</span> {},
+          },
+          <span style="color:#a6e22e">swiperList</span><span style="color:#f92672">:</span> [{
+            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0001&#34;</span>,
+            <span style="color:#e6db74">&#34;imgUrl&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://img1.qunarzz.com/piao/fusion/1708/7c/c0b9acba07764302.jpg_750x200_389436b7.jpg&#34;</span>
+          }, {
+            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0002&#34;</span>,
+            <span style="color:#e6db74">&#34;imgUrl&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://img1.qunarzz.com/piao/fusion/1805/13/6332699c44387902.jpg_750x200_b7afa4f8.jpg&#34;</span>
+          }, {
+            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0003&#34;</span>,
+            <span style="color:#e6db74">&#34;imgUrl&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://img1.qunarzz.com/piao/fusion/1805/3b/ef86879aa50e3002.jpg_750x200_2a108508.jpg&#34;</span>
+          }, {
+            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0004&#34;</span>,
+            <span style="color:#e6db74">&#34;imgUrl&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://img1.qunarzz.com/piao/fusion/1806/c1/a8a7d6b08a69c002.jpg_750x200_59bdc9ae.jpg&#34;</span>
+          }, {
+            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0005&#34;</span>,
+            <span style="color:#e6db74">&#34;imgUrl&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://img1.qunarzz.com/piao/fusion/1806/5a/a7fc8e091190d602.jpg_750x200_e3aae50d.jpg&#34;</span>
+          }],
+      }
+   }
+},
+<span style="color:#a6e22e">mounted</span>(){
+   <span style="color:#75715e">//只有一张图片时不轮播
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">swiperOption</span>.<span style="color:#a6e22e">autoplay</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">swiperList</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> {
+   		<span style="color:#a6e22e">disableOnInteraction</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>, <span style="color:#75715e">// 用户操作swiper之后，是否禁止autoplay
+</span><span style="color:#75715e"></span>   		<span style="color:#a6e22e">delay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>, <span style="color:#75715e">// 自动切换的时间间隔（单位ms）
+</span><span style="color:#75715e"></span>   } <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+},
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>赵旭东 </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://13802-hub.github.io/2020/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper/>https://13802-hub.github.io/2020/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://13802-hub.github.io/tags/vue/">
+                    #vue</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://13802-hub.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://13802-hub.github.io/2020/css%E5%A4%96%E9%93%BE%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F/" class="prev" rel="prev" title="Css外链引入方式"><i class="iconfont icon-left"></i>&nbsp;Css外链引入方式</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+	
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+   <div class="copyright">
+      &copy;
+      
+      <span itemprop="copyrightYear">2020 - 2020</span>
+      
+      <span class="with-love">
+         <i class="iconfont icon-love"></i>
+      </span>
+      
+      <span class="author" itemprop="copyrightHolder"><a href="https://13802-hub.github.io/">赵旭东</a> |
+      </span>
+      
+
+      
+      <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a
+            href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span>
+			
+      <span id="busuanzi_container_site_pv">
+         本站访问量：<span id="busuanzi_value_site_pv"></span>次
+      </span>
+      &nbsp;
+      <span id="busuanzi_container_site_uv">
+         您是本站第 <span id="busuanzi_value_site_uv"></span> 位访问者
+      </span>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>
