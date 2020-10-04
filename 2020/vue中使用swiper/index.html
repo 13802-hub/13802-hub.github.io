@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Vue中使用swiper",
     "headline" : "Vue中使用swiper",
-    "description" : "Vue中使用swiper 完成移动端轮播图的基本使用 1. 说明  在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性； swiper挂网：https:\/\/www.swiper.com.cn\/，本次使用的版本\u0026quot;vue-awesome-swiper\u0026quot;: \u0026quot;^3.1.3\u0026quot;  2. 安装 npm i vue-awesome-swiper@3.1.3 --save\/\/指定安装版本 npm i vue-awesome-swiper --save \/\/ 默认安装最新的 3. 引入   引入方式有两种\n  在main.js文件中全局引入\nimport VueAwesomeSwiper from \u0026#39;vue-awesome-swiper\u0026#39; import \u0026#39;swiper\/dist\/css\/swiper.css\u0026#39; Vue.use(VueAwesomeSwiper)   在组件中引入\nimport { swiper, swiperSlide } from \u0026#34;vue-awesome-swiper\u0026#34;; require(\u0026#34;swiper\/dist\/css\/swiper.css\u0026#34;); export default { name: \u0026#34;swiper\u0026#34;, components:{ swiper, swiperSlide }     4. 轮播图 \u0026lt;template\u0026gt; \u0026lt;div\u0026gt; \u0026lt;section class=\u0026#34;swiper\u0026#34;\u0026gt; \u0026lt;swiper :options=\u0026#34;swiperOption\u0026#34;\u0026gt; \u0026lt;swiper-slide class=\u0026#34;swp-silde\u0026#34; v-for=\u0026#34;(item, index) in swiperList\u0026#34; :key=\u0026#34;item.",
+    "description" : "Vue中使用swiper 完成移动端轮播图的基本使用 1. 说明  在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性； swiper挂网：https:\/\/www.swiper.com.cn\/，  2. 安装 npm i swiper --save \/\/安装swiper 默认最新版 npm i vue-awesome-swiper --save \/\/ 安装vue-awesome-swiper 3. 引入   引入方式有两种\n  在main.js文件中全局引入\nimport VueAwesomeSwiper from \u0026#39;vue-awesome-swiper\u0026#39; import \u0026#39;swiper\/dist\/css\/swiper.css\u0026#39; Vue.use(VueAwesomeSwiper)   在组件中引入\nimport { Swiper, SwiperSlide } from \u0026#34;vue-awesome-swiper\u0026#34;; import \u0026#34;swiper\/swiper-bundle.css\u0026#34;; export default { name: \u0026#34;swiper\u0026#34;, components:{ Swiper, SwiperSlide },     4. 轮播图 \u0026lt;template\u0026gt; \u0026lt;div\u0026gt; \u0026lt;section class=\u0026#34;swiper\u0026#34;\u0026gt; \u0026lt;swiper :options=\u0026#34;swiperOption\u0026#34;\u0026gt; \u0026lt;swiper-slide class=\u0026#34;swp-silde\u0026#34; v-for=\u0026#34;item in swiperList\u0026#34; :key=\u0026#34;item.",
     "inLanguage" : "en-us",
     "author" : "赵旭东",
     "creator" : "赵旭东",
@@ -57,7 +57,7 @@
     "datePublished": "2020-10-01 13:05:17 \u002b0800 CST",
     "dateModified" : "2020-10-01 13:05:17 \u002b0800 CST",
     "url" : "https:\/\/13802-hub.github.io\/2020\/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper\/",
-    "wordCount" : "164",
+    "wordCount" : "162",
     "keywords" : [ "vue", "养眼的赵旭东"]
 }
 </script>
@@ -152,11 +152,11 @@
 <h2 id="1-说明">1. 说明</h2>
 <ul>
 <li>在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性；</li>
-<li>swiper挂网：<a href="https://www.swiper.com.cn/">https://www.swiper.com.cn/</a>，本次使用的版本<code>&quot;vue-awesome-swiper&quot;: &quot;^3.1.3&quot;</code></li>
+<li>swiper挂网：<a href="https://www.swiper.com.cn/">https://www.swiper.com.cn/</a>，</li>
 </ul>
 <h2 id="2-安装">2. 安装</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">npm i vue-awesome-swiper@3.1.3 --save//指定安装版本
-npm i vue-awesome-swiper --save // 默认安装最新的
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">npm i swiper --save //安装swiper 默认最新版
+npm i vue-awesome-swiper --save  // 安装vue-awesome-swiper 
 </code></pre></div><h2 id="3-引入">3. 引入</h2>
 <ul>
 <li>
@@ -170,14 +170,14 @@ npm i vue-awesome-swiper --save // 默认安装最新的
 </code></pre></div></li>
 <li>
 <p>在组件中引入</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">swiper</span>, <span style="color:#a6e22e">swiperSlide</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;vue-awesome-swiper&#34;</span>;
-<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;swiper/dist/css/swiper.css&#34;</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Swiper</span>, <span style="color:#a6e22e">SwiperSlide</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;vue-awesome-swiper&#34;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;swiper/swiper-bundle.css&#34;</span>;
 <span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;swiper&#34;</span>,
     <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span>{
-       <span style="color:#a6e22e">swiper</span>,
-        <span style="color:#a6e22e">swiperSlide</span>
-   }
+       <span style="color:#a6e22e">Swiper</span>,
+        <span style="color:#a6e22e">SwiperSlide</span>
+   },
 </code></pre></div></li>
 </ol>
 </li>
@@ -187,7 +187,7 @@ npm i vue-awesome-swiper --save // 默认安装最新的
 	&lt;<span style="color:#f92672">div</span>&gt;
 		&lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;swiper&#34;</span>&gt;
 			&lt;<span style="color:#f92672">swiper</span> <span style="color:#f92672">:options</span><span style="color:#e6db74">=&#34;swiperOption&#34;</span>&gt;
-				&lt;<span style="color:#f92672">swiper-slide</span>  <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;swp-silde&#34;</span> <span style="color:#f92672">v-for</span><span style="color:#e6db74">=&#34;(item, index) in swiperList&#34; :key=&#34;item.id&#34; data-id=&#34;item.id&#34;&gt;
+				&lt;<span style="color:#f92672">swiper-slide</span>  <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;swp-silde&#34;</span> <span style="color:#f92672">v-for</span><span style="color:#e6db74">=&#34;item in swiperList&#34; :key=&#34;item.id&#34;&gt;
 </span><span style="color:#e6db74">				&lt;img class=&#34;swp-img&#34; :src=&#34;item.imgUrl&#34; alt=&#34;&#34;&gt;&lt;/swiper-slide&gt;
 </span><span style="color:#e6db74">				&lt;div class=&#34;swiper-pagination&#34; slot=&#34;pagination&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
 			&lt;/<span style="color:#f92672">swiper</span>&gt;
@@ -197,7 +197,7 @@ npm i vue-awesome-swiper --save // 默认安装最新的
 
 &lt;<span style="color:#f92672">script</span>&gt;
 <span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;swiper/dist/css/swiper.css&#39;</span>
-<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">swiper</span>, <span style="color:#a6e22e">swiperSlide</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue-awesome-swiper&#39;</span>
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Swiper</span>, <span style="color:#a6e22e">SwiperSlide</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue-awesome-swiper&#39;</span>
 <span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Swiper&#34;</span>,
    <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span> {
@@ -207,11 +207,15 @@ npm i vue-awesome-swiper --save // 默认安装最新的
    <span style="color:#a6e22e">data</span>(){
       <span style="color:#66d9ef">return</span> {
           <span style="color:#a6e22e">swiperOption</span><span style="color:#f92672">:</span> {
-            <span style="color:#a6e22e">pagination</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;.swiper-pagination&#39;</span> },
-            <span style="color:#a6e22e">autoplay</span><span style="color:#f92672">:</span> {},
-          },
-          <span style="color:#a6e22e">swiperList</span><span style="color:#f92672">:</span> [{
-            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0001&#34;</span>,
+            <span style="color:#a6e22e">pagination</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">el</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;.swiper-pagination&#39;</span> },	<span style="color:#75715e">//分页点
+</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">autoplay</span><span style="color:#f92672">:</span> {	<span style="color:#75715e">//自动轮播
+</span><span style="color:#75715e"></span>             	<span style="color:#a6e22e">disableOnInteraction</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>, <span style="color:#75715e">// 用户操作swiper之后，是否禁止autoplay
+</span><span style="color:#75715e"></span>              	<span style="color:#a6e22e">delay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1000</span>, <span style="color:#75715e">// 自动切换的时间间隔（单位ms）  
+</span><span style="color:#75715e"></span>            },
+            <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>, 	<span style="color:#75715e">//无缝轮播
+</span><span style="color:#75715e"></span>          },
+          <span style="color:#a6e22e">swiperList</span><span style="color:#f92672">:</span> [{ 	<span style="color:#75715e">//通常轮播图都是后台获取,这里模拟一下后台数据
+</span><span style="color:#75715e"></span>            <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0001&#34;</span>,
             <span style="color:#e6db74">&#34;imgUrl&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;http://img1.qunarzz.com/piao/fusion/1708/7c/c0b9acba07764302.jpg_750x200_389436b7.jpg&#34;</span>
           }, {
             <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;0002&#34;</span>,
@@ -230,12 +234,9 @@ npm i vue-awesome-swiper --save // 默认安装最新的
    }
 },
 <span style="color:#a6e22e">mounted</span>(){
-   <span style="color:#75715e">//只有一张图片时不轮播
-</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">swiperOption</span>.<span style="color:#a6e22e">autoplay</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">swiperList</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">?</span> {
-   		<span style="color:#a6e22e">disableOnInteraction</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>, <span style="color:#75715e">// 用户操作swiper之后，是否禁止autoplay
-</span><span style="color:#75715e"></span>   		<span style="color:#a6e22e">delay</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3000</span>, <span style="color:#75715e">// 自动切换的时间间隔（单位ms）
-</span><span style="color:#75715e"></span>   } <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
-},
+   <span style="color:#75715e">//挂载完成后
+</span><span style="color:#75715e"></span>   <span style="color:#75715e">//一般这里调用axios函数获取后台数据 
+</span><span style="color:#75715e"></span>},
 &lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div>
     </div>

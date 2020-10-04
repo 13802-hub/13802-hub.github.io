@@ -13,10 +13,10 @@
       <pubDate>Thu, 01 Oct 2020 13:05:17 +0800</pubDate>
       
       <guid>https://13802-hub.github.io/2020/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper/</guid>
-      <description>Vue中使用swiper 完成移动端轮播图的基本使用 1. 说明  在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性； swiper挂网：https://www.swiper.com.cn/，本次使用的版本&amp;quot;vue-awesome-swiper&amp;quot;: &amp;quot;^3.1.3&amp;quot;  2. 安装 npm i vue-awesome-swiper@3.1.3 --save//指定安装版本 npm i vue-awesome-swiper --save // 默认安装最新的 3. 引入   引入方式有两种
+      <description>Vue中使用swiper 完成移动端轮播图的基本使用 1. 说明  在vue中实现轮播需要安装基于swiper的vue-awesome-swiper,不同的版本的vue-awesome-swiper对应不同的swiper,所以swiper里面的属性多数能应用到vue-awesome-swiper中，也可以根据swiper文档来设置vue-awesome-swiper属性； swiper挂网：https://www.swiper.com.cn/，  2. 安装 npm i swiper --save //安装swiper 默认最新版 npm i vue-awesome-swiper --save // 安装vue-awesome-swiper 3. 引入   引入方式有两种
   在main.js文件中全局引入
 import VueAwesomeSwiper from &amp;#39;vue-awesome-swiper&amp;#39; import &amp;#39;swiper/dist/css/swiper.css&amp;#39; Vue.use(VueAwesomeSwiper)   在组件中引入
-import { swiper, swiperSlide } from &amp;#34;vue-awesome-swiper&amp;#34;; require(&amp;#34;swiper/dist/css/swiper.css&amp;#34;); export default { name: &amp;#34;swiper&amp;#34;, components:{ swiper, swiperSlide }     4. 轮播图 &amp;lt;template&amp;gt; &amp;lt;div&amp;gt; &amp;lt;section class=&amp;#34;swiper&amp;#34;&amp;gt; &amp;lt;swiper :options=&amp;#34;swiperOption&amp;#34;&amp;gt; &amp;lt;swiper-slide class=&amp;#34;swp-silde&amp;#34; v-for=&amp;#34;(item, index) in swiperList&amp;#34; :key=&amp;#34;item.</description>
+import { Swiper, SwiperSlide } from &amp;#34;vue-awesome-swiper&amp;#34;; import &amp;#34;swiper/swiper-bundle.css&amp;#34;; export default { name: &amp;#34;swiper&amp;#34;, components:{ Swiper, SwiperSlide },     4. 轮播图 &amp;lt;template&amp;gt; &amp;lt;div&amp;gt; &amp;lt;section class=&amp;#34;swiper&amp;#34;&amp;gt; &amp;lt;swiper :options=&amp;#34;swiperOption&amp;#34;&amp;gt; &amp;lt;swiper-slide class=&amp;#34;swp-silde&amp;#34; v-for=&amp;#34;item in swiperList&amp;#34; :key=&amp;#34;item.</description>
     </item>
     
     <item>
