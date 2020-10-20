@@ -6,7 +6,24 @@
     <description>Recent content in Posts on 养眼的赵旭东</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 13:05:17 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 20:53:46 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Js数组查找具体值的方法</title>
+      <link>https://13802-hub.github.io/2020/js%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE%E5%85%B7%E4%BD%93%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 20 Oct 2020 20:53:46 +0800</pubDate>
+      
+      <guid>https://13802-hub.github.io/2020/js%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE%E5%85%B7%E4%BD%93%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>Js数组查找具体值的方法 查找一个数组的某条数据作为判断条件:
+首先定义一个数组:
+let arr = [&amp;#39;web&amp;#39;,&amp;#39;java&amp;#39;,&amp;#39;php&amp;#39;,&amp;#39;python&amp;#39;,]; 在数组中查找是否包含 number类型的 1 ,
+1.inclueds ​	字符串方法 , 包含返回true,不包含，返回false,但是只适用于 数组的元素是简单类型
+let result = arr.inclues(&amp;#39;web&amp;#39;); console.log(result); //返回的是true 2.indexOf ​	字符串方法 , 包含了返回第一次出现的下标，没有包含返回-1,数组的元素是简单类型
+let result = arr.indexOf(&amp;#39;web&amp;#39;); console.log(result); //返回的是下标1 let result2 =arr.indexOf(&amp;#39;node&amp;#39;); console.log(result);//返回的是-1 3.find ​	包含了返回 满足条件的元素,不包含返回undefined ,数组元素数据类型随意
+let result = arr.find(&amp;#39;web&amp;#39;); console.log(result); //返回的是&amp;#39;web&amp;#39; let result2 =arr.find(&amp;#39;node&amp;#39;); console.log(result); //返回的是undefined 4.findIndex ​	包含返回 第一次出现的下标，不包含返回-1,数组元素数据类型随意
+let result = arr.findIndex(&amp;#39;web&amp;#39;); console.log(result); //返回的是下标1 5.some ​	数组的迭代方法 包含返回true，不包含返回false。数组元素数据类型随意
+let result = arr.</description>
+    </item>
+    
     <item>
       <title>Vue中使用swiper</title>
       <link>https://13802-hub.github.io/2020/vue%E4%B8%AD%E4%BD%BF%E7%94%A8swiper/</link>
