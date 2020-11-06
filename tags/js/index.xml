@@ -29,9 +29,8 @@ let arr = [&amp;#39;web&amp;#39;,&amp;#39;java&amp;#39;,&amp;#39;php&amp;#39;,&a
 1.inclueds ​	字符串方法 , 包含返回true,不包含，返回false,但是只适用于 数组的元素是简单类型
 let result = arr.includes(&amp;#39;web&amp;#39;); console.log(result); //返回的是true 2.indexOf ​	字符串方法 , 包含了返回第一次出现的下标，没有包含返回-1,数组的元素是简单类型
 let result = arr.indexOf(&amp;#39;web&amp;#39;); console.log(result); //返回的是下标1 let result2 =arr.indexOf(&amp;#39;node&amp;#39;); console.log(result);//返回的是-1 3.find ​	包含了返回 满足条件的元素,不包含返回undefined ,数组元素数据类型随意
-let result = arr.find(&amp;#39;web&amp;#39;); console.log(result); //返回的是&amp;#39;web&amp;#39; let result2 =arr.find(&amp;#39;node&amp;#39;); console.log(result); //返回的是undefined 4.findIndex ​	包含返回 第一次出现的下标，不包含返回-1,数组元素数据类型随意
-let result = arr.findIndex(&amp;#39;web&amp;#39;); console.log(result); //返回的是下标1 5.some ​	数组的迭代方法 包含返回true，不包含返回false。数组元素数据类型随意
-let result = arr.</description>
+let result = arr.find(item=&amp;gt; item ===&amp;#39;web&amp;#39;); console.log(result); //返回的是&amp;#39;web&amp;#39; let result2 =arr.find(item=&amp;gt; item ===&amp;#39;node&amp;#39;); console.log(result); //返回的是undefined 4.findIndex ​	包含返回 第一次出现的下标，不包含返回-1,数组元素数据类型随意
+let result = arr.findIndex(item=&amp;gt; item ===&amp;#39;web&amp;#39;); console.log(result); //返回的是下标1 5.</description>
     </item>
     
   </channel>

@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Js数组查找具体值的方法",
     "headline" : "Js数组查找具体值的方法",
-    "description" : "Js数组查找具体值的方法 查找一个数组的某条数据作为判断条件:\n首先定义一个数组:\nlet arr = [\u0026#39;web\u0026#39;,\u0026#39;java\u0026#39;,\u0026#39;php\u0026#39;,\u0026#39;python\u0026#39;,]; 在数组中查找是否包含 number类型的 1 ,\n1.inclueds ​\t字符串方法 , 包含返回true,不包含，返回false,但是只适用于 数组的元素是简单类型\nlet result = arr.includes(\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是true 2.indexOf ​\t字符串方法 , 包含了返回第一次出现的下标，没有包含返回-1,数组的元素是简单类型\nlet result = arr.indexOf(\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是下标1 let result2 =arr.indexOf(\u0026#39;node\u0026#39;); console.log(result);\/\/返回的是-1 3.find ​\t包含了返回 满足条件的元素,不包含返回undefined ,数组元素数据类型随意\nlet result = arr.find(\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是\u0026#39;web\u0026#39; let result2 =arr.find(\u0026#39;node\u0026#39;); console.log(result); \/\/返回的是undefined 4.findIndex ​\t包含返回 第一次出现的下标，不包含返回-1,数组元素数据类型随意\nlet result = arr.findIndex(\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是下标1 5.some ​\t数组的迭代方法 包含返回true，不包含返回false。数组元素数据类型随意\nlet result = arr.",
+    "description" : "Js数组查找具体值的方法 查找一个数组的某条数据作为判断条件:\n首先定义一个数组:\nlet arr = [\u0026#39;web\u0026#39;,\u0026#39;java\u0026#39;,\u0026#39;php\u0026#39;,\u0026#39;python\u0026#39;,]; 在数组中查找是否包含 number类型的 1 ,\n1.inclueds ​\t字符串方法 , 包含返回true,不包含，返回false,但是只适用于 数组的元素是简单类型\nlet result = arr.includes(\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是true 2.indexOf ​\t字符串方法 , 包含了返回第一次出现的下标，没有包含返回-1,数组的元素是简单类型\nlet result = arr.indexOf(\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是下标1 let result2 =arr.indexOf(\u0026#39;node\u0026#39;); console.log(result);\/\/返回的是-1 3.find ​\t包含了返回 满足条件的元素,不包含返回undefined ,数组元素数据类型随意\nlet result = arr.find(item=\u0026gt; item ===\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是\u0026#39;web\u0026#39; let result2 =arr.find(item=\u0026gt; item ===\u0026#39;node\u0026#39;); console.log(result); \/\/返回的是undefined 4.findIndex ​\t包含返回 第一次出现的下标，不包含返回-1,数组元素数据类型随意\nlet result = arr.findIndex(item=\u0026gt; item ===\u0026#39;web\u0026#39;); console.log(result); \/\/返回的是下标1 5.",
     "inLanguage" : "en-us",
     "author" : "赵旭东",
     "creator" : "赵旭东",
@@ -57,7 +57,7 @@
     "datePublished": "2020-10-20 20:53:46 \u002b0800 CST",
     "dateModified" : "2020-10-20 20:53:46 \u002b0800 CST",
     "url" : "https:\/\/13802-hub.github.io\/2020\/js%E6%95%B0%E7%BB%84%E6%9F%A5%E6%89%BE%E5%85%B7%E4%BD%93%E5%80%BC%E7%9A%84%E6%96%B9%E6%B3%95\/",
-    "wordCount" : "82",
+    "wordCount" : "88",
     "keywords" : [ "js", "养眼的赵旭东"]
 }
 </script>
@@ -165,13 +165,13 @@
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);<span style="color:#75715e">//返回的是-1
 </span></code></pre></div><h4 id="3find">3.find</h4>
 <p>​	包含了返回 满足条件的元素,不包含返回undefined ,数组元素<strong>数据类型随意</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;web&#39;</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">find</span>(<span style="color:#a6e22e">item</span>=&gt; <span style="color:#a6e22e">item</span> <span style="color:#f92672">===</span><span style="color:#e6db74">&#39;web&#39;</span>);
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">//返回的是&#39;web&#39;
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result2</span> <span style="color:#f92672">=</span><span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;node&#39;</span>);
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result2</span> <span style="color:#f92672">=</span><span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">find</span>(<span style="color:#a6e22e">item</span>=&gt; <span style="color:#a6e22e">item</span> <span style="color:#f92672">===</span><span style="color:#e6db74">&#39;node&#39;</span>);
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">//返回的是undefined
 </span></code></pre></div><h4 id="4findindex">4.findIndex</h4>
 <p>​	包含返回 第一次出现的下标，不包含返回-1,数组元素<strong>数据类型随意</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">findIndex</span>(<span style="color:#e6db74">&#39;web&#39;</span>);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">arr</span>.<span style="color:#a6e22e">findIndex</span>(<span style="color:#a6e22e">item</span>=&gt; <span style="color:#a6e22e">item</span> <span style="color:#f92672">===</span><span style="color:#e6db74">&#39;web&#39;</span>);
 <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>); <span style="color:#75715e">//返回的是下标1
 </span></code></pre></div><h4 id="5some">5.some</h4>
 <p>​	数组的迭代方法 包含返回true，不包含返回false。数组元素<strong>数据类型随意</strong></p>
