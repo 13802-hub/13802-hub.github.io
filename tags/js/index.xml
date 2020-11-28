@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Oct 2020 22:43:27 +0800</lastBuildDate><atom:link href="https://13802-hub.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>?(search)传参获取json数据格式</title>
+      <title>React?(search)传参获取json数据格式</title>
       <link>https://13802-hub.github.io/2020/search%E4%BC%A0%E5%8F%82%E8%8E%B7%E5%8F%96json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/</link>
       <pubDate>Wed, 21 Oct 2020 22:43:27 +0800</pubDate>
       
       <guid>https://13802-hub.github.io/2020/search%E4%BC%A0%E5%8F%82%E8%8E%B7%E5%8F%96json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/</guid>
-      <description>?(search)传参的情况下,拿到的this.props.location.search为&amp;quot;?a=10&amp;amp;b=20&amp;amp;b=30&amp;quot;的格式,但我们一般是用到json的数据格式是{a:&amp;ldquo;10&amp;rdquo;,b:&amp;ldquo;20&amp;rdquo;,c:&amp;ldquo;30&amp;rdquo;}这样的,所以我们要自己处理一下
+      <description>React?(search)传参的情况下,拿到的this.props.location.search为&amp;quot;?a=10&amp;amp;b=20&amp;amp;b=30&amp;quot;的格式,但我们一般是用到json的数据格式是{a:&amp;ldquo;10&amp;rdquo;,b:&amp;ldquo;20&amp;rdquo;,c:&amp;ldquo;30&amp;rdquo;}这样的,所以我们要自己处理一下
 1.原生js方法 let str=this.props.location.search.slice(1) ; //a=10&amp;amp;b=20&amp;amp;3=30 //&amp;#34;字符串截取,去掉&amp;#39;?&amp;#39; let arr=str.split(&amp;#34;&amp;amp;&amp;#34;); //[&amp;#34;a=10&amp;#34;, &amp;#34;b=20&amp;#34; , &amp;#34;c=30&amp;#34;] //字符串split方法 把字符串变为数组,去掉&amp;amp; let result={}; //声明一个空对象 一会保存json数据 arr.forEach(item=&amp;gt;{ let temArr=item.split(&amp;#34;=&amp;#34;) ; // [&amp;#34;a&amp;#34;,&amp;#34;10&amp;#34;] 	result[temArr[0]]=temArr[1] //{&amp;#34;a&amp;#34;:&amp;#34;10&amp;#34;} }) //数组迭代方法forEach与split结合 去掉&amp;#39;=&amp;#39;生成新的子数组, 并组合成json数据 consloe.log(result) //{&amp;#34;a&amp;#34;:&amp;#34;10&amp;#34;,&amp;#34;b&amp;#34;:&amp;#34;20&amp;#34;,&amp;#34;c&amp;#34;:&amp;#34;30&amp;#34;} 2.node内置querystring方法 //首先需要引入node.js的方法 import querystring from &amp;#34;querystring&amp;#34;; let str=this.props.location.search.slice(1) //同样先去掉? let result = querystring.parse(str) //然后直接使用方法 console.log(result) //{&amp;#34;a&amp;#34;:&amp;#34;10&amp;#34;,&amp;#34;b&amp;#34;:&amp;#34;20&amp;#34;,&amp;#34;c&amp;#34;:&amp;#34;30&amp;#34;} 好像第二种比较简单,但作为初学者我认为还是得掌握原生js方法.</description>
     </item>
     

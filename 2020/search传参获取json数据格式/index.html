@@ -22,10 +22,10 @@
   <title>
        
        
-           ?(search)传参获取json数据格式 | 养眼的赵旭东
+           React?(search)传参获取json数据格式 | 养眼的赵旭东
        
   </title>
-  <meta name="title" content="?(search)传参获取json数据格式 | 养眼的赵旭东">
+  <meta name="title" content="React?(search)传参获取json数据格式 | 养眼的赵旭东">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/13802-hub.github.io\/"
     },
     "articleSection" : "posts",
-    "name" : "?(search)传参获取json数据格式",
-    "headline" : "?(search)传参获取json数据格式",
-    "description" : "?(search)传参的情况下,拿到的this.props.location.search为\u0026quot;?a=10\u0026amp;b=20\u0026amp;b=30\u0026quot;的格式,但我们一般是用到json的数据格式是{a:\u0026ldquo;10\u0026rdquo;,b:\u0026ldquo;20\u0026rdquo;,c:\u0026ldquo;30\u0026rdquo;}这样的,所以我们要自己处理一下\n1.原生js方法 let str=this.props.location.search.slice(1) ; \/\/a=10\u0026amp;b=20\u0026amp;3=30 \/\/\u0026#34;字符串截取,去掉\u0026#39;?\u0026#39; let arr=str.split(\u0026#34;\u0026amp;\u0026#34;); \/\/[\u0026#34;a=10\u0026#34;, \u0026#34;b=20\u0026#34; , \u0026#34;c=30\u0026#34;] \/\/字符串split方法 把字符串变为数组,去掉\u0026amp; let result={}; \/\/声明一个空对象 一会保存json数据 arr.forEach(item=\u0026gt;{ let temArr=item.split(\u0026#34;=\u0026#34;) ; \/\/ [\u0026#34;a\u0026#34;,\u0026#34;10\u0026#34;] \tresult[temArr[0]]=temArr[1] \/\/{\u0026#34;a\u0026#34;:\u0026#34;10\u0026#34;} }) \/\/数组迭代方法forEach与split结合 去掉\u0026#39;=\u0026#39;生成新的子数组, 并组合成json数据 consloe.log(result) \/\/{\u0026#34;a\u0026#34;:\u0026#34;10\u0026#34;,\u0026#34;b\u0026#34;:\u0026#34;20\u0026#34;,\u0026#34;c\u0026#34;:\u0026#34;30\u0026#34;} 2.node内置querystring方法 \/\/首先需要引入node.js的方法 import querystring from \u0026#34;querystring\u0026#34;; let str=this.props.location.search.slice(1) \/\/同样先去掉? let result = querystring.parse(str) \/\/然后直接使用方法 console.log(result) \/\/{\u0026#34;a\u0026#34;:\u0026#34;10\u0026#34;,\u0026#34;b\u0026#34;:\u0026#34;20\u0026#34;,\u0026#34;c\u0026#34;:\u0026#34;30\u0026#34;} 好像第二种比较简单,但作为初学者我认为还是得掌握原生js方法.",
+    "name" : "React?(search)传参获取json数据格式",
+    "headline" : "React?(search)传参获取json数据格式",
+    "description" : "React?(search)传参的情况下,拿到的this.props.location.search为\u0026quot;?a=10\u0026amp;b=20\u0026amp;b=30\u0026quot;的格式,但我们一般是用到json的数据格式是{a:\u0026ldquo;10\u0026rdquo;,b:\u0026ldquo;20\u0026rdquo;,c:\u0026ldquo;30\u0026rdquo;}这样的,所以我们要自己处理一下\n1.原生js方法 let str=this.props.location.search.slice(1) ; \/\/a=10\u0026amp;b=20\u0026amp;3=30 \/\/\u0026#34;字符串截取,去掉\u0026#39;?\u0026#39; let arr=str.split(\u0026#34;\u0026amp;\u0026#34;); \/\/[\u0026#34;a=10\u0026#34;, \u0026#34;b=20\u0026#34; , \u0026#34;c=30\u0026#34;] \/\/字符串split方法 把字符串变为数组,去掉\u0026amp; let result={}; \/\/声明一个空对象 一会保存json数据 arr.forEach(item=\u0026gt;{ let temArr=item.split(\u0026#34;=\u0026#34;) ; \/\/ [\u0026#34;a\u0026#34;,\u0026#34;10\u0026#34;] \tresult[temArr[0]]=temArr[1] \/\/{\u0026#34;a\u0026#34;:\u0026#34;10\u0026#34;} }) \/\/数组迭代方法forEach与split结合 去掉\u0026#39;=\u0026#39;生成新的子数组, 并组合成json数据 consloe.log(result) \/\/{\u0026#34;a\u0026#34;:\u0026#34;10\u0026#34;,\u0026#34;b\u0026#34;:\u0026#34;20\u0026#34;,\u0026#34;c\u0026#34;:\u0026#34;30\u0026#34;} 2.node内置querystring方法 \/\/首先需要引入node.js的方法 import querystring from \u0026#34;querystring\u0026#34;; let str=this.props.location.search.slice(1) \/\/同样先去掉? let result = querystring.parse(str) \/\/然后直接使用方法 console.log(result) \/\/{\u0026#34;a\u0026#34;:\u0026#34;10\u0026#34;,\u0026#34;b\u0026#34;:\u0026#34;20\u0026#34;,\u0026#34;c\u0026#34;:\u0026#34;30\u0026#34;} 好像第二种比较简单,但作为初学者我认为还是得掌握原生js方法.",
     "inLanguage" : "en-us",
     "author" : "赵旭东",
     "creator" : "赵旭东",
@@ -117,7 +117,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">?(search)传参获取json数据格式</h1>
+        <h1 class="post-title" itemprop="name headline">React?(search)传参获取json数据格式</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://13802-hub.github.io/" rel="author">赵旭东</a> with ♥ 
                 <span class="post-time">
@@ -144,7 +144,7 @@
           
           
 
-          <p>?(search)传参的情况下,拿到的this.props.location.search为&quot;?a=10&amp;b=20&amp;b=30&quot;的格式,但我们一般是用到json的数据格式是{a:&ldquo;10&rdquo;,b:&ldquo;20&rdquo;,c:&ldquo;30&rdquo;}这样的,所以我们要自己处理一下</p>
+          <p>React?(search)传参的情况下,拿到的this.props.location.search为&quot;?a=10&amp;b=20&amp;b=30&quot;的格式,但我们一般是用到json的数据格式是{a:&ldquo;10&rdquo;,b:&ldquo;20&rdquo;,c:&ldquo;30&rdquo;}这样的,所以我们要自己处理一下</p>
 <h2 id="1原生js方法">1.原生js方法</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">str</span><span style="color:#f92672">=</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">props</span>.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">search</span>.<span style="color:#a6e22e">slice</span>(<span style="color:#ae81ff">1</span>) ; <span style="color:#75715e">//a=10&amp;b=20&amp;3=30
 </span><span style="color:#75715e">//&#34;字符串截取,去掉&#39;?&#39;
